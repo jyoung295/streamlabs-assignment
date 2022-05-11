@@ -1,0 +1,21 @@
+body, html {
+    margin: 0 !important;
+    font-size: 16px;
+    overflow: hidden;
+    background: #f1f1f1;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.app-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:after {
+        content: "(1920x1080 canvas scaled)";
+        font-size: 0.8rem;
+        color: rgba($color: #000, $alpha: 0.5);
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        z-index: 999;
+    }
+}

@@ -1,0 +1,45 @@
+.context-menu {
+    height: auto;
+    width: 200px;
+    padding: 0.75rem 0;
+    border-radius: 0.25rem;
+    background: #3e4655;
+    position: absolute;
+    z-index: 999;
+
+    &--item {
+        color: white;
+        font-size: 1rem;
+        list-style: none;
+        padding: 0.5rem 0.75rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        user-select: none;
+
+        &:hover {
+            cursor: pointer;
+            background: #4E596A;
+        }
+
+        &.insert-image {
+            &:after {
+                content: '\e890';
+                font-family: 'Material Icons';
+                position: relative;
+                display: inline-block;
+                margin-left: 0.75rem;
+            }
+        }
+
+        &.delete-image {
+            &:after {
+                content: '\e872';
+                font-family: 'Material Icons';
+                position: relative;
+                display: inline-block;
+                margin-left: 0.75rem;
+            }
+        }
+    }
+}
