@@ -6,12 +6,21 @@
 
 ## Questions
 1. *How long did it take you to complete this assignment?*
+
 About 6 hours.
-1. *What about this assignment did you find most challenging?*
+
+2. *What about this assignment did you find most challenging?*
+
 Figuring out the math for scaling the position of the images on the canvas as the canvas is resized.
-1. *What about this assignment did you find unclear?*
+
+3. *What about this assignment did you find unclear?*
+
 Nothing, I think the requirements and expectations were very clear.
-1. *Do you feel like this assignment has an appropriate level of difficulty?*
+
+4. *Do you feel like this assignment has an appropriate level of difficulty?*
+
 Yes, I think so. The assignment was challenging overall with differing levels of difficulty throughout for the various requirements and expectations.
-1. *Briefly explain the technical decisions you made in this project, i.e. architecture, code-splitting, libraries, or other decisions and tradeoffs.*
+
+5. *Briefly explain the technical decisions you made in this project, i.e. architecture, code-splitting, libraries, or other decisions and tradeoffs.*
+
 I chose to use React with a basic `create-react-app` install and I felt the app would be simple enough to solve without using any other libraries; the only other library I added was `sass` so I could write my styles in scss. Since the images and all the interactions were all going to be within the canvas, I decided to write all the logic in the Canvas compenent. As I was thinking about how this simple app could be extended, I liked the idea of adding a custom context menu. The menu gets its options passed in as props from the parent component, so it can be utilized anywhere in the app with menu options specific to wherever the context menu click occurs, and new menu options can added as needed easily. 
